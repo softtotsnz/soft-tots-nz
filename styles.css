@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #4d2c91;
+  color: #fff;
+  padding: 1em 0.5em;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 0.7em;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background: #e2d1f9;
+  text-align: center;
+  padding: 2em 1em;
+}
+.btn {
+  display: inline-block;
+  background: #6a4fb6;
+  color: #fff;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #4d2c91;
+}
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin: 2em 0;
+}
+.producto-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1em;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.15s;
+}
+.producto-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+.producto-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.producto-card h4 {
+  margin: 0.6em 0 0.3em;
+}
+.producto-card p {
+  margin: 0.2em 0;
+  font-size: 1em;
+}
+footer {
+  background: #4d2c91;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0.5em;
+}
+.social-links a {
+  margin: 0 0.7em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0 0 0;
+}
+.social-list li {
+  margin-bottom: 1em;
+}
+textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  padding: 0.7em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  resize: vertical;
+}
+@media (max-width: 600px) {
+  .productos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  header, footer {
+    text-align: center;
+  }
+}
