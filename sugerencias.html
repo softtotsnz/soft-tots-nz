@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Sugerencias | SOFT TOTS NZ</title>
+  <title>SOFT TOTS NZ - Suggestions</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>SOFT TOTS NZ</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="carrito.html">Carrito</a>
-      <a href="sugerencias.html">Sugerencias</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-row">
+      <h1>SOFT TOTS NZ</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="productos.html" class="nav-link">Products</a>
+        <a href="carrito.html" class="nav-link">Cart</a>
+        <a href="sugerencias.html" class="nav-link active">Suggestions</a>
+        <a href="contacto.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
   <main>
-    <h2>Dejanos tu sugerencia</h2>
-    <form id="form-sugerencias">
-      <textarea name="sugerencia" placeholder="Escribe aquí tu sugerencia..." required></textarea>
-      <button class="btn" type="submit">Enviar</button>
-    </form>
-    <div id="mensaje-confirmacion"></div>
+    <section class="main-section">
+      <h2>Suggestions</h2>
+      <p>We value your feedback! Please share your ideas or suggestions to help us improve our handmade products and your shopping experience.</p>
+      <form class="suggestion-form">
+        <textarea placeholder="Write your suggestion here..." required></textarea>
+        <button type="submit" class="btn">Send Suggestion</button>
+      </form>
+    </section>
   </main>
   <footer>
-    <div class="social-links">
-      <a href="https://instagram.com/" target="_blank">Instagram</a>
-      <a href="https://facebook.com/" target="_blank">Facebook</a>
-      <a href="https://wa.me/" target="_blank">WhatsApp</a>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="https://wa.me/" target="_blank">WhatsApp</a>
+      </div>
+      <p>&copy; 2025 SOFT TOTS NZ</p>
     </div>
-    <p>&copy; 2025 SOFT TOTS NZ</p>
   </footer>
-  <script src="scripts.js"></script>
 </body>
 </html>
