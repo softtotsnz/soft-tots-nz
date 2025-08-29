@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Productos | SOFT TOTS NZ</title>
+  <title>SOFT TOTS NZ - Products</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>SOFT TOTS NZ</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="carrito.html">Carrito</a>
-      <a href="sugerencias.html">Sugerencias</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="header-row">
+      <h1>SOFT TOTS NZ</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="productos.html" class="nav-link active">Products</a>
+        <a href="carrito.html" class="nav-link">Cart</a>
+        <a href="sugerencias.html" class="nav-link">Suggestions</a>
+        <a href="contacto.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
   <main>
-    <h2>Catálogo de Productos</h2>
-    <div class="productos-grid" id="productos-lista"></div>
+    <section class="main-section">
+      <h2>Our Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="img/scrunchie.jpg" alt="Knitted Scrunchie">
+          <div class="product-info">
+            <h4>Scrunchie</h4>
+            <p>Handmade, soft, and colorful hair scrunchies.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/scarf.jpg" alt="Knitted Scarf">
+          <div class="product-info">
+            <h4>Scarf</h4>
+            <p>Warm, stylish scarves for every season.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/toy.jpg" alt="Cuddly Toy">
+          <div class="product-info">
+            <h4>Cuddly Toy</h4>
+            <p>Safe, cuddly toys for babies and children.</p>
+          </div>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </section>
   </main>
   <footer>
-    <div class="social-links">
-      <a href="https://instagram.com/" target="_blank">Instagram</a>
-      <a href="https://facebook.com/" target="_blank">Facebook</a>
-      <a href="https://wa.me/" target="_blank">WhatsApp</a>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="https://wa.me/" target="_blank">WhatsApp</a>
+      </div>
+      <p>&copy; 2025 SOFT TOTS NZ</p>
     </div>
-    <p>&copy; 2025 SOFT TOTS NZ</p>
   </footer>
-  <script src="scripts.js"></script>
 </body>
 </html>
